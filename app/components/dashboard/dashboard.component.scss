@@ -1,0 +1,30 @@
+.root-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.content-container {
+  height: calc(100% - 60px);
+  width: 100%;
+  background-image: url('../../../assets/27036.jpg');
+}
+
+.outlet-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  overflow: auto;
+  gap: 1rem;
+  justify-content: center;
+  background-image: url('../../../assets/27036.jpg');
+}
+
+.task-dashboard {
+  width: 100%;
+}
+
+app-task-form {
+  width: 100%;
+}

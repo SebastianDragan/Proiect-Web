@@ -1,0 +1,56 @@
+.task-dashboard {
+  max-width: 600px; // Lățimea maximă a formularului
+  margin: 0 auto; // Centrarea formularului
+  padding: 20px; // Padding interior
+  background-color: #ffffff; // Fundal alb
+  border-radius: 8px; // Colțuri rotunjite
+  box-shadow: 0 4px 20px rgba(255, 8, 8, 0.1); // Umbră subtilă
+  font-family: 'Arial', sans-serif; // Font modern
+
+  h2 {
+    text-align: center; // Centrarea titlului
+    color: #070707; // Culoare text mai închisă
+    margin-bottom: 20px; // Spațiere sub titlu
+  }
+
+  mat-form-field {
+    margin: 15px 0; // Spațiere între câmpuri
+    width: 100%; // Lățimea câmpului să fie 100%
+
+    mat-label {
+      color: #bebebe; // Culoare etichetei
+    }
+
+    input, textarea {
+      border-radius: 4px; // Colțuri rotunjite pentru câmpuri
+      padding: 10px; // Padding interior
+      font-size: 16px; // Dimensiunea fontului
+      transition: border-color 0.3s; // Tranziție pentru schimbarea culorii bordurii
+
+      &:focus {
+        border-color: #007bff; // Culoarea bordurii la focus
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); // Umbră la focus
+      }
+    }
+
+    textarea {
+      min-height: 100px; // Înălțimea minimă pentru textarea
+    }
+  }
+
+  button {
+    width: 100%; // Butonul să ocupe întreaga lățime
+    padding: 12px; // Padding interior
+    background-color: #007bff; // Culoare de fundal pentru buton
+    color: #ffffff; // Culoare text alb
+    border: none; // Fără bordură
+    border-radius: 4px; // Colțuri rotunjite
+    cursor: pointer; // Cursor pointer
+    font-size: 16px; // Dimensiunea fontului
+    transition: background-color 0.3s; // Tranziție pentru hover
+
+    &:hover {
+      background-color: #0056b3; // Culoare mai închisă la hover
+    }
+  }
+}

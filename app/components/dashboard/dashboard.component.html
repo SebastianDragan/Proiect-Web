@@ -1,0 +1,13 @@
+
+<div class="root-container">
+  <app-navbar></app-navbar>
+  <div class="content-container">
+    <div class="outlet-container">
+      <app-task-form></app-task-form>
+      <div class="task-dashboard">
+      <app-task-list></app-task-list>
+    </div>
+    <app-task-chart [tasks]="tasks"></app-task-chart>
+    </div>
+  </div>
+</div>

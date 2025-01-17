@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+.rootContainer {
+  overflow: auto;
+  background-image: url('../../../assets/27036.jpg');
+  height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.formContainer {
+  height: auto;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  max-width: 600px;
+  background-color: white;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  border-radius: 24px;
+}
+
+.optionsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+  /* background-color: rgba(0, 0, 0, 0.25); */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.optionButton {
+  width: 50%;
+  color: white;
+  font-size: 1rem;
+  height: 47px;
+  background-color: var(--secondary);
+  cursor: pointer;
+  border: none;
+}
+
+.optionButton:hover {
+  background-color: var(--secondary-40);
+}
+
+.optionButton.active {
+  background-color: var(--secondary-40);
+}
+
+.optionButton.active:hover {
+  background-color: var(--secondary-30);
+}
+
+.logo-wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box;
+  width: 200px;
+  height: 100px;
+  padding: 1.2rem;
+  margin: auto;
+  margin-bottom: 1rem;
+}

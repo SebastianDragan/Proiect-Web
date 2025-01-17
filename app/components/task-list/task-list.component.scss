@@ -1,0 +1,92 @@
+/* Stiluri generale pentru listă și sarcini */
+.task-dashboard {
+  max-width: 100%; // Lățimea maximă a formularului
+  margin: 0 auto; // Centrarea formularului
+  padding: 20px; // Padding interior
+  background-color: #ffffff; // Fundal alb
+  border-radius: 8px; // Colțuri rotunjite
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Umbră subtilă
+  font-family: 'Arial', sans-serif; // Font modern}
+}
+
+.tasks {
+  display: inline-flexbox; /* Așezare orizontală a sarcinilor */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Spațiere între sarcini */
+  margin-top: 20px; /* Margine superioară */
+  background-color: #ffffff;
+}
+
+ul {
+  list-style-type: none; /* Elimină marcajul listei */
+  padding: 0; /* Elimină padding-ul implicit */
+  margin: 20px 0; /* Margine pentru separarea listei de alte elemente */
+}
+
+div {
+  margin-bottom: 20px; /* Margine între sarcini */
+}
+
+h3 {
+  margin: 0; /* Elimină marginea implicită */
+  color: #333; /* Culoare închisă pentru titluri */
+  font-size: 1.5em; /* Mărime mai mare pentru titluri */
+}
+
+p {
+  margin: 5px 0; /* Margine între paragrafe */
+  color: #666; /* Culoare gri pentru descriere */
+}
+
+/* Stiluri pentru sarcini */
+.task {
+  background-color: #ffffff; /* Fundal alb pentru sarcini */
+  border: 1px solid #d1d1d1; /* Bordură gri deschis */
+  border-radius: 8px; /* Colțuri rotunjite */
+  padding: 20px; /* Padding interior */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Umbră pentru adâncime */
+  transition: background-color 0.3s, transform 0.3s; /* Tranziții pentru efecte */
+
+  &:hover {
+    background-color: #f1f1f1; /* Fundal mai deschis la hover */
+    transform: translateY(-2px); /* Efect de ridicare la hover */
+  }
+}
+
+/* Stiluri pentru butoane */
+button {
+  margin-right: 10px; /* Margine între butoane */
+  background-color: #007bff; /* Culoare albastră pentru butoane */
+  color: white; /* Text alb */
+  border: none; /* Fără bordură */
+  border-radius: 5px; /* Colțuri rotunjite */
+  padding: 8px 12px; /* Padding interior */
+  cursor: pointer; /* Cursor pointer pentru interacțiune */
+  font-weight: bold; /* Font îngroșat pentru butoane */
+  transition: background-color 0.3s, transform 0.3s; /* Tranziții pentru efecte */
+
+  &:hover {
+    background-color: #0056b3; /* Culoare mai închisă la hover */
+    transform: translateY(-1px); /* Efect de ridicare la hover */
+  }
+}
+
+/* Mesaj de eroare sau succes */
+.message {
+  color: #dc3545; /* Roșu pentru mesajele de eroare */
+  font-weight: bold; /* Font îngroșat */
+  margin-top: 10px; /* Margine superioară */
+  border: 1px solid #dc3545; /* Bordură roșie pentru mesaj */
+  padding: 10px; /* Padding pentru mesaj */
+  border-radius: 5px; /* Colțuri rotunjite */
+  background-color: #f8d7da; /* Fundal deschis pentru mesaj */
+}
+
+/* Mesaj pentru absența sarcinilor */
+.no-tasks {
+  color: #666; /* Culoare gri pentru mesajul de absență */
+  font-weight: bold; /* Font îngroșat */
+  text-align: center; /* Centrare text */
+  margin-top: 20px; /* Margine superioară pentru separare */
+}

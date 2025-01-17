@@ -1,0 +1,22 @@
+<form class="task-dashboard" [formGroup]="taskForm" (ngSubmit)="addTask()">
+  <mat-form-field >
+    <mat-label>Task Title</mat-label>
+    <input matInput formControlName="title" required>
+  </mat-form-field>
+
+  <mat-form-field >
+    <mat-label>Task Description</mat-label>
+    <textarea matInput formControlName="description"></textarea>
+  </mat-form-field>
+
+  <mat-form-field >
+    <mat-label>Deadline</mat-label>
+    <input matInput formControlName="deadline" type="datetime-local">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit" >Add Task</button>
+  <div *ngIf="message" class="error-message">{{ message }}
+  </div>
+
+</form>
+

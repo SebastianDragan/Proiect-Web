@@ -1,0 +1,14 @@
+<div class="task-dashboard">
+  <h2>Task List</h2>
+
+<div class="tasks" *ngFor="let task of tasks">
+  <h3>{{ task.title }}</h3>
+  <p>{{ task.description }}</p>
+  <p><strong>Deadline:</strong> {{ task.deadline }}</p>
+  <button (click)="deleteTask(task.id)">Delete</button>
+</div>
+
+<div *ngIf="tasks.length === 0">
+  <p>No tasks found</p>
+</div>
+</div>

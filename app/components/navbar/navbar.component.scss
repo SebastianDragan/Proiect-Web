@@ -1,0 +1,63 @@
+.btn-notifications {
+  border: none;
+  background: none;
+  margin-right: 20px;
+}
+
+.navbar {
+  background-color: white !important;
+}
+
+.navbar {
+  padding: 0;
+  border-bottom: 1px solid var(--secondary-10);
+}
+
+span {
+  color: var(--secondary);
+}
+
+.navbar-right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 240px;
+  padding: 0.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff; /* Culoare de fundal albastră */
+  color: white; /* Text alb */
+  padding: 10px 20px; /* Padding pentru navbar */
+}
+
+.navbar-title {
+  font-size: 1.5em;
+  color: #007bff;/* Mărime mai mare pentru titlu */
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center; /* Aliniază vertical utilizatorul */
+}
+
+button {
+  margin-left: 20px; /* Margine între numele utilizatorului și buton */
+  background-color: #dc3545; /* Culoare roșie pentru buton */
+  color: white; /* Text alb pentru buton */
+  border: none; /* Fără bordură */
+  border-radius: 5px; /* Colțuri rotunjite */
+  padding: 5px 10px; /* Padding interior */
+  cursor: pointer; /* Cursor pointer pentru interacțiune */
+  transition: background-color 0.3s; /* Tranziție pentru hover */
+
+  &:hover {
+    background-color: #c82333; /* Culoare mai închisă la hover */
+  }
+}
+
+

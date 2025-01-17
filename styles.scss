@@ -1,0 +1,180 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+/* angular-cli file: src/styles.css */
+
+
+:root {
+  /* --main: rgb(90, 106, 207); */
+  /* --main-20: rgba(90, 106, 207, 0.2);
+  --main-10: rgba(90, 106, 207, 0.1);
+  --light-purple: rgb(166, 171, 200); */
+  --main: rgb(238, 125, 16);
+  --main-10: rgba(238, 125, 16, 0.1);
+  --main-20: rgba(238, 125, 16, 0.2);
+  --main-80: rgba(238, 125, 16, 0.8);
+  --main-30: rgb(255, 159, 50);
+  --light-orange: rgb(255, 230, 207);
+  --secondary: rgb(0, 44, 104);
+  --light-secondary: rgb(146, 195, 255);
+  --secondary-5: rgba(0, 44, 104, 0.05);
+  --secondary-10: rgba(0, 44, 104, 0.1);
+  --secondary-20: rgba(0, 44, 104, 0.2);
+  --secondary-30: rgba(0, 44, 104, 0.3);
+  --secondary-40: rgba(0, 43, 104, 0.829);
+  --tertiary: rgb(255, 255, 255);
+  --tertiary-80: rgba(255, 255, 255, 0.8);
+  --tertiary-60: rgba(255, 255, 255, 0.6);
+  --main-font: "Roboto", sans-serif;
+  --mat-error: #f44336;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Form Styling */
+
+.auth-form-container {
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.auth-names-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.auth-names-container > .auth-input-container {
+  width: 48%;
+}
+.auth-form-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.auth-input-container,
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.auth-input,
+.input {
+  margin-top: 10px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #66666647;
+}
+
+.input.textarea {
+  height: 100px;
+}
+
+.auth-input-label,
+.form-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+.auth-main-button {
+  height: 47px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 1rem;
+  background-color: var(--main);
+  cursor: pointer;
+}
+
+.auth-main-button:hover {
+  background-color: var(--main-80);
+}
+
+.auth-main-button:active {
+  background-color: var(--main);
+}
+
+.auth-form,
+.training-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.login-form-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.login-form-footer {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.auth-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+app-trainings-calendar {
+  width: 100%;
+  height: 100%;
+}
+
+/* Training List Styles */
+
+.training-list {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.training-list-item-container {
+  height: 130px;
+  background-color: var(--tertiary);
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  -webkit-box-shadow: 0px 0px 51px -19px rgba(145, 145, 145, 1);
+  -moz-box-shadow: 0px 0px 51px -19px rgba(145, 145, 145, 1);
+  box-shadow: 0px 0px 51px -19px rgba(145, 145, 145, 1);
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
